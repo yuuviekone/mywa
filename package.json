@@ -19,7 +19,7 @@
     "license": "MIT",
     "description": "Best WhatsApp Bot Base 2025",
     "dependencies": {
-        "baileys": "github:amiruldev20/Baileys",
+        "baileys": "npm:baileys-beta@6.7.7",
         "cheerio": "latest",
         "file-type": "^19.6.0",
         "session": "npm:baileys-mongodb@1.0.5"
