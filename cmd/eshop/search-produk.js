@@ -10,7 +10,7 @@ export default (handler) => {
         if (!nama) {
             m.reply(`Masukan nama costum contoh .searchcos nahida`);
         } else {
-            const indexToSearch = eshopData.findIndex(item => item.name === nama);
+            const indexToSearch = eshopData.findIndex(item => item.id === nama);
 
             if (indexToSearch !== -1) {
                 const costum = eshopData[indexToSearch];
