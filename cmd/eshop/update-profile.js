@@ -15,7 +15,7 @@ export default (handler) => {
         usr.name = text;
         m.reply(`Nama berhasil diubah menjadi ${text}`);
       } else if (system === 'ig') {
-        const regex = /^https:\/\/www.instagram.com\/[a-zA-Z0-9_.\-]+/i;
+        const regex = /^https:\/\/www.instagram.com\/[a-zA-Z0-9_.]+/i;
         if (regex.test(text)) {
           usr.ig = text;
           m.reply('Link Instagram berhasil diubah');
