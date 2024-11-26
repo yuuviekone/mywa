@@ -1,5 +1,3 @@
-const axios = require('axios')
-
 module.exports = (handler) => {
     handler.reg({
         cmd: ['instagram', 'ig', 'igdl'],
