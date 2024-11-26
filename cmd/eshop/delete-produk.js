@@ -10,7 +10,7 @@ export default (handler) => {
           if (!nama) {
               m.reply(`Masukan nama costum contoh .delcos nahida`);
           } else {
-              const indexToDelete = eshopData.findIndex(item => item.name === nama);
+              const indexToDelete = eshopData.findIndex(item => item.id === nama);
           
               if (indexToDelete !== -1) {
                   eshopData.splice(indexToDelete, 1);
