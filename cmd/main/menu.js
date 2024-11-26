@@ -53,7 +53,7 @@ export default (handler) => {
                 }
             }
 
-            const orderedTags = ['main', 'convert', 'ai', 'downloader', 'group', 'channel', 'owner', 'tools', 'anime']
+            const orderedTags = ['main', "e-shop", 'convert', 'ai', 'downloader', 'group', 'channel', 'owner', 'tools', 'anime']
             let menu = ''
             let counter = 1
 
