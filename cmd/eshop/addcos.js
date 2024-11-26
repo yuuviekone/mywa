@@ -5,11 +5,13 @@ export default (handler) => {
         desc: 'menambahkan list costum',
         isOwner: true,
         run: async (m, {db}) => {
-          let [ nama, nominal, kategori, ...inc ] = m.text.split("|")
-          if (!nama) {
-            m.reply(`masukan nama costum contoh .addcos nahida 700000`)
+          let [ id, nama, nominal, kategori, ...inc ] = m.text.split("|")
+          if (!id) {
+            m.reply(`masukan id costum`)
+          } else if (!nama) {
+            m.reply(`masukan nama costum`)
           } else if (!nominal) {
-            m.reply(`masukan harga costum contoh .addcos nahida 700000`)
+            m.reply(`masukan harga costum`)
           } else if (!kategori) {
             m.reply(`masukan kategori costum seperti nama anime/game`)
           } else if (!inc) {
