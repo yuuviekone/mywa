@@ -15,7 +15,7 @@ export default (handler) => {
             if (results.length > 0) {
                 let message = "Hasil pencarian:\n";
                 results.forEach(item => {
-                    message += `\nNama: ${item.name}\nKategori: ${item.kategori}\nHarga: ${item.harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}\nninclude: ${item.inc}\n`;
+                    message += `\nid: ${item.id}\nNama: ${item.name}\nKategori: ${item.kategori}\nHarga: ${item.harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}\nninclude: ${item.inc}\n`;
                 });
                 m.reply(message);
             } else {
