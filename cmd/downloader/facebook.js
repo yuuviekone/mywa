@@ -1,5 +1,3 @@
-import * as cheerio from 'cheerio'
-
 export default (handler) => {
     handler.reg({
         cmd: ['facebook', 'fb', 'fbdl'],
