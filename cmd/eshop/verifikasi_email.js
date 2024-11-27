@@ -28,7 +28,7 @@ export default (headler) => {
           if (error) {
             m.reply(`error`);
           } else {
-            m.reply('Email terkirim: ');
+            m.reply('Email terkirim');
           }
         });
 
