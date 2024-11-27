@@ -8,6 +8,7 @@ export default (headler) => {
       let code = m.text
       if (usr.code_email === code) {
         usr.email = usr.email_bayangan
+        usr.verifikasi_email = true
         m.reply(`berhasil`)
       } else {
         m.reply(`code tersebut salah`)
