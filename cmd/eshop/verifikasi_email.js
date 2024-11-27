@@ -19,6 +19,7 @@ export default (headler) => {
       } else {
         let code = func.rand(6)
         usr.code_email = `${code}`
+        usr.email = `${emailusr}`
         let mailOptions = {
           from: 'sq.kotorichan@gmail.com',
           to: `${emailusr}`,
