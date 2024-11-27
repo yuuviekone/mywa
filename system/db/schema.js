@@ -19,6 +19,7 @@ const schema = async (m, sock, db) => {
         if (!("booking" in user)) user.booking = ""
         if (!("tanggal" in user)) user.tanggal = ""
         if (!("email" in user)) user.email = ""
+        if (!("code_email" in user)) user.code_email = ""
         if (!isBoolean(user.verifikasi)) user.verifikasi = false
         if (!isBoolean(user.verifikasi_email)) user.autentikasi = false
         if (!isBoolean(user.autentikasi)) user.autentikasi = false
