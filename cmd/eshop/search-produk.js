@@ -14,7 +14,7 @@ export default (handler) => {
 
             if (indexToSearch !== -1) {
                 const costum = eshopData[indexToSearch];
-                m.reply(`id costum: ${costum.id}\nnama costum: ${costum.name}\nharga: ${costum.harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}\ntotal rental: ${costum.total}\ninclude: ${costum.inc}`);
+                m.reply(`id costum: ${costum.id}\nnama costum: ${costum.name}\nukuran: ${costum.ukuran}\nharga: ${costum.harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}\ntotal rental: ${costum.total}\ninclude: ${costum.inc}`);
             } else {
                 m.reply(`Costum dengan nama ${nama} tidak ada dalam database`);
             }
