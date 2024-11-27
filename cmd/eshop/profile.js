@@ -14,12 +14,12 @@ export default (handler) => {
 ⟩——————————————⟨
 - | nama: ${usr.name}
 - | instagram: ${usr.ig}
+- | email: ${usr.email}
 - | total rental: ${usr.total_rental}
 - | booking costum: ${usr.booking}
 - | tanggal booking: ${usr.tanggal}
 - | saldo: ${usr.saldo.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}
 - | verifikasi: ${usr.verifikasi ? '✅' : '❌' }
-- | tanggal booking: ${usr.email}
 - | verifikasi email: ${usr.verifikasi_email ? '✅' : '❌' }
 - | autentikasi: ${usr.autentikasi ? '✅' : '❌' }
 ⟩——————————————⟨`);
