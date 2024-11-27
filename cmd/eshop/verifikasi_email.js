@@ -18,6 +18,7 @@ export default (headler) => {
         m.reply(`akun anda telah terverifikasi`)
       } else {
         let code = func.rand(6)
+        usr.code_email = `${code}`
         let mailOptions = {
           from: 'sq.kotorichan@gmail.com',
           to: `${emailusr}`,
