@@ -9,6 +9,7 @@ export default (headler) => {
       if (usr.code_email === code) {
         usr.email = usr.email_bayangan
         usr.verifikasi_email = true
+        usr.code_email = ""
         m.reply(`berhasil`)
       } else {
         m.reply(`code tersebut salah`)
