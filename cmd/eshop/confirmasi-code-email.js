@@ -7,6 +7,7 @@ export default (headler) => {
       let usr = db.users[m.sender]
       let code = m.text
       if (usr.code_email === code) {
+        usr.email = usr.email_bayangan
         m.reply(`berhasil`)
       } else {
         m.reply(`code tersebut salah`)
