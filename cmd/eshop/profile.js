@@ -19,6 +19,8 @@ export default (handler) => {
 - | tanggal booking: ${usr.tanggal}
 - | saldo: ${usr.saldo.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}
 - | verifikasi: ${usr.verifikasi ? '✅' : '❌' }
+- | verifikasi email: ${usr.verifikasi_email ? '✅' : '❌' }
+- | autentikasi: ${usr.autentikasi ? '✅' : '❌' }
 ⟩——————————————⟨`);
       } else {
         let usrs = user[input];
