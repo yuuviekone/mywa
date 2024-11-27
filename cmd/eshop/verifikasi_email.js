@@ -6,6 +6,9 @@ export default (headler) => {
     desc: "untuk verifikasi pembuatan akun",
     run: async (m, { db, func }) => {
       let emailusr = m.text
+      if (!emailusr) {
+        m.reply(`mana email nya?`)
+      } else {
       let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -34,7 +37,7 @@ export default (headler) => {
           }
         });
 
-        
+      }
       }
     }
   })
