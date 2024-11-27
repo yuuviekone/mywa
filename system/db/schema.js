@@ -18,7 +18,9 @@ const schema = async (m, sock, db) => {
         if (!("afk_reason" in user)) user.afk_reason = ""
         if (!("booking" in user)) user.booking = ""
         if (!("tanggal" in user)) user.tanggal = ""
-        if (!("verifikasi" in user)) user.verifikasi = false
+        if (!isBoolean(user.verifikasi)) user.verifikasi = false
+        if (!isBoolean(user.verifikasi_email)) = false
+        if (!isBoolean(user.keamanan)) = false
         if (!isNumber(user.exp)) user.exp = 0
         if (!isNumber(user.total_rental)) user.total_rental = 0
         if (!isNumber(user.limit)) user.limit = 10
@@ -45,6 +47,8 @@ const schema = async (m, sock, db) => {
             booking: "",
             tanggal: "",
             verifikasi: false,
+            verifikasi_email: false,
+            keamanan: false,
             ig: "",
             exp: 0,
             limit: 10,
