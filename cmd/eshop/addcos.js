@@ -5,7 +5,7 @@ export default (handler) => {
         desc: 'menambahkan list costum',
         isOwner: true,
         run: async (m, {db}) => {
-          let [ id, nama, nominal, kategori, ...inc ] = m.text.split("|")
+          let [ id, nama, nominal, kategori, ukuran, ...inc ] = m.text.split("|")
           if (!id) {
             m.reply(`masukan id costum`)
           } else if (!nama) {
@@ -14,6 +14,8 @@ export default (handler) => {
             m.reply(`masukan harga costum`)
           } else if (!kategori) {
             m.reply(`masukan kategori costum seperti nama anime/game`)
+          } else if (!ukuran) {
+            m.reply(`masukan ukuran costum seperti nama S/M/L/XL`)
           } else if (!inc) {
             m.reply(`masukan include costum seperti wig/acc dll`)
           } else {
