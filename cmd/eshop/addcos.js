@@ -21,7 +21,7 @@ export default (handler) => {
           } else {
             nominal = parseInt(nominal)
           let eshop = db.setting.eshop
-          eshop.push({ id: `${id}`
+          eshop.push({ id: `${id}`,
           name: `${nama}`, 
           harga: nominal, 
           kategori: `${kategori}`, 
