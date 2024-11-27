@@ -25,6 +25,7 @@ export default (handler) => {
           name: `${nama}`, 
           harga: nominal, 
           kategori: `${kategori}`, 
+          ukuran: `${ukuran}`
           total: 0, 
           inc: `${inc}`})
           m.reply(`costum ${nama} dengan harga ${nominal} telah di tambahkan`)
